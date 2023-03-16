@@ -4,8 +4,7 @@ const xmlFile = readFileSync(`${process.cwd()}/employees.xml`, 'utf8');
 const parser = new XMLParser();
 const json = parser.parse(xmlFile);
 
-// console.log(`First item: `, json.employees.employee[0]);
-// general average
+
 const calcGeneralAverage = ()=>{
     let acc = 0;
     const employeeData  = json.employees.employee
